@@ -5,6 +5,7 @@ from discord.embeds import Embed
 from discord.ext import commands
 
 bot = commands.Bot(command_prefix='peng!', description="This is the helper bot")
+TOKEN = ''
 
 #Para crear comandos
 @bot.command()
@@ -45,4 +46,4 @@ async def on_ready():
     await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="toughpenguins.club"))
     print('I wake up bitches')
 
-bot.run('ODg2MzU0NzMwNTMwNTA4ODcw.YT0YKw.-2CXV8Rexk30uPS5knDpGo6G1bM')
+bot.run(TOKEN)
